@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{title.habilidades}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Jorge Luis Liberata</h1>
+        </div>
+        <div id="redondo" class="marron">
+            <h1>Habilidades Empiricas</h1>
+
+            <ol>
+                {% for hab in habilidades %}
+                <li> {{hab}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

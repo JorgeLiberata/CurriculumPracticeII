@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>{{title.datos}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Jorge Luis Liberata</h1>
+    </div>
+    <div class="container">
+        <div id="row " class="azul" id="redondo">
+            <div id="redondo " class="azul">
+                <h1 class="h1, titulos">Datos Personales</h1>
+                <table class="table" id="verdana">
+                    <thead>
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Edad</th>
+                            <th>Direccion</th>
+                            <th>Ciudad</th>
+                            <th>Pais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for dato in datos %}
+                        <tr>
+                            <td><a href="http://127.0.0.1:5000/formacion" class="negro">{{dato.cedula}}</a></td>
+                            <td>{{dato.nombres}}</td>
+                            <td>{{dato.apellidos}}</td>
+                            <td>{{dato.edad}}</td>
+                            <td>{{dato.direccion}}</td>
+                            <td>{{dato.ciudad}}</td>
+                            <td>{{dato.pais}}</td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

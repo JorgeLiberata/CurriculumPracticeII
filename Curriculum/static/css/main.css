@@ -1,0 +1,40 @@
+#h1 {
+    font-family: Arial;
+}
+
+.titulos {
+    padding-left: 1em;
+}
+
+#verdana {
+    font-family: Verdana;
+}
+
+.azul {
+    background-color: rgb(17, 0, 255);
+    border-radius: 40px;
+}
+
+.negro {
+    color: rgb(0, 0, 0);
+}
+
+.marron {
+    background-color: rgb(190, 95, 95);
+}
+
+.verde {
+    background-color: rgb(3, 115, 119);
+}
+
+.amarillo {
+    background-color: rgba(255, 221, 27, 0.692);
+}
+
+thead {
+    background-color: rgba(44, 169, 211, 0.596);
+}
+
+#redondo {
+    border-radius: 20px;
+}
